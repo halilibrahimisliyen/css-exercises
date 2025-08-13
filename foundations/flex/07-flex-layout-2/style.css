@@ -2,6 +2,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   min-height: 100vh;
+ 
 }
 
 .header {
@@ -26,4 +27,68 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+}
+
+
+/* Solutions */
+
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+.content{
+  display: flex;
+  flex:1;
+}
+
+.sidebar{
+  width: 300px;
+  flex: 1 0 auto;
+  padding: 16px;
+}
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  flex:1 1 auto;
+  flex-direction: row;
+  padding: 48px;
+  gap: 32px;
+  
+}
+
+.card{
+  max-width: 400px;
+  text-align: center;
+  padding: 20px;
+}
+
+.header{
+  font-size: 32px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+  list-style: none;
+}
+
+a{
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
 }
